@@ -21,22 +21,69 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyX-SC-sDM">
                                 <rect key="frame" x="20" y="483" width="76" height="30"/>
                                 <state key="normal" title="Action One"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="508" y="74" width="76" height="30"/>
+                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkn-NP-sIP">
                                 <rect key="frame" x="20" y="533" width="88" height="30"/>
                                 <state key="normal" title="Action Three"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="496" y="230" width="88" height="30"/>
+                                </variation>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcJ-It-bRV">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pcJ-It-bRV">
                                 <rect key="frame" x="20" y="28" width="560" height="417"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NS-cU-013">
+                                <rect key="frame" x="504" y="483" width="76" height="30"/>
+                                <state key="normal" title="Action Two"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="508" y="150" width="76" height="30"/>
+                                </variation>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfy-1q-33i">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="471" y="105" width="129" height="42"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIK-SF-fym">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="471" y="180" width="129" height="42"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voD-El-5P8">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="471" y="262" width="129" height="42"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4j-ju-qtk">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="471" y="344" width="129" height="36"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1E-6v-yp6">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="471" y="28" width="129" height="45"/>
+                                </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVq-2S-wRo">
                                 <rect key="frame" x="501" y="533" width="79" height="30"/>
                                 <state key="normal" title="Action Four"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NS-cU-013">
-                                <rect key="frame" x="504" y="483" width="76" height="30"/>
-                                <state key="normal" title="Action Two"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="505" y="312" width="79" height="30"/>
+                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -84,6 +131,13 @@
                             <constraint firstItem="3NS-cU-013" firstAttribute="trailing" secondItem="BVq-2S-wRo" secondAttribute="trailing" id="yJG-9m-Fgz"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tfy-1q-33i"/>
+                                <exclude reference="RIK-SF-fym"/>
+                                <exclude reference="voD-El-5P8"/>
+                                <exclude reference="u4j-ju-qtk"/>
+                                <exclude reference="S1E-6v-yp6"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="1lu-zp-s7c"/>
                                 <exclude reference="Qpa-EX-sLX"/>
@@ -91,35 +145,34 @@
                                 <exclude reference="3dg-Y2-4s8"/>
                                 <exclude reference="AvS-bT-NQi"/>
                                 <exclude reference="cS2-u3-tM6"/>
-                                <exclude reference="KS7-6N-ffm"/>
                                 <exclude reference="EAt-bg-BjL"/>
                                 <exclude reference="Fmv-eF-5dE"/>
                                 <exclude reference="GwX-fO-eXg"/>
+                                <exclude reference="KS7-6N-ffm"/>
                                 <exclude reference="gaZ-qM-Oxu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="tfy-1q-33i"/>
+                                <include reference="RIK-SF-fym"/>
+                                <include reference="voD-El-5P8"/>
+                                <include reference="u4j-ju-qtk"/>
+                                <include reference="S1E-6v-yp6"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="1lu-zp-s7c"/>
                                 <include reference="Qpa-EX-sLX"/>
                                 <include reference="Xa0-CW-gSO"/>
-                                <include reference="3dg-Y2-4s8"/>
-                                <include reference="AvS-bT-NQi"/>
                                 <exclude reference="F7R-Ny-c0K"/>
                                 <exclude reference="JHZ-KH-n4z"/>
                                 <exclude reference="RCr-Jc-9wa"/>
-                                <include reference="cS2-u3-tM6"/>
-                                <include reference="KS7-6N-ffm"/>
-                                <exclude reference="yJG-9m-Fgz"/>
                                 <exclude reference="9wX-Mj-mxx"/>
-                                <include reference="EAt-bg-BjL"/>
-                                <include reference="Fmv-eF-5dE"/>
-                                <include reference="GwX-fO-eXg"/>
                                 <exclude reference="OpB-OR-Ltp"/>
                                 <exclude reference="V91-4V-WQ2"/>
+                                <exclude reference="yJG-9m-Fgz"/>
                                 <exclude reference="Jrw-tQ-Ds7"/>
                                 <exclude reference="KdH-Pn-ue6"/>
-                                <include reference="gaZ-qM-Oxu"/>
                                 <exclude reference="pB0-EB-zLf"/>
                             </mask>
                         </variation>
