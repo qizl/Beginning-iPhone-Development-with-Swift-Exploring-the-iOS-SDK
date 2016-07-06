@@ -62,6 +62,7 @@
         self.blueViewController.view.frame = self.view.frame;
         [self switchViewFromViewController:self.yellowViewController toViewController:self.blueViewController];
     }
+    [UIView commitAnimations];
 }
 
 - (void)switchViewFromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
