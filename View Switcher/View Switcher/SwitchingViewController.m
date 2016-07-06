@@ -7,8 +7,13 @@
 //
 
 #import "SwitchingViewController.h"
+#import "YellowViewController.h"
+#import "BlueViewController.h"
 
 @interface SwitchingViewController ()
+
+@property (strong, nonatomic) YellowViewController *yellowViewController;
+@property (strong, nonatomic) BlueViewController *blueViewController;
 
 @end
 
@@ -23,5 +28,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction) switchViews:(id)sender{}
 
 @end
