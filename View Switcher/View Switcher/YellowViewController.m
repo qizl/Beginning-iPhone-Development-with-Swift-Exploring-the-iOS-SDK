@@ -19,6 +19,16 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)yellowButtonPressed {
+    UIAlertController *alert = [UIAlertController
+                                alertControllerWithTitle:@"Yellow View Button Pressed"
+                                message:@"You pressed the button on the yellow view"
+                                preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"Yep, I did" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:action];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
